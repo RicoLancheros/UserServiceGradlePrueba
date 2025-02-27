@@ -8,6 +8,7 @@ import lombok.Data;
 @Data  // Lombok: genera getters, setters, equals, hashCode, toString
 public class User {
 
+    // Atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
