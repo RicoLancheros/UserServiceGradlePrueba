@@ -5,10 +5,9 @@ import lombok.Data;
 
 @Entity
 @Table(name = "users")
-@Data  // Lombok: genera getters, setters, equals, hashCode, toString
+@Data
 public class User {
 
-    // Atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -25,5 +24,4 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    // Getters y setters (generados por Lombok @Data)
 }
