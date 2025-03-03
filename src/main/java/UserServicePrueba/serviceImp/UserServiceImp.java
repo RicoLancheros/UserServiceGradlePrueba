@@ -15,7 +15,7 @@ public class UserServiceImp implements UserService {
 
     private final UserRepository userRepository;
 
-    @Autowired // Aunque Spring lo infiere en muchos casos, es buena práctica explícita
+    @Autowired
     public UserServiceImp(UserRepository userRepository) {
         this.userRepository = userRepository;
     }

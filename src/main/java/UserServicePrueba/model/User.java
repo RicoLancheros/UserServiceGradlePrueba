@@ -8,6 +8,7 @@ import lombok.Data;
 @Data
 public class User {
 
+    //este
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
